@@ -17,6 +17,7 @@
 
 
 /* Hidden Objects */
+/* Sets the nav, footer, and article's display to none, so that way it can be hidden when printing. */
 nav,
 footer,
 article {
@@ -24,11 +25,13 @@ article {
 }
 
 /* Comic Book Sheet Styles */
+/* Sets the section sheets width, when printing, to 6in and the margins top and bottom to 0in and the margins left and right to auto, so it can automatically center itself. */
 section#sheet {
     width: 6in;
     margin: 0in auto 0in auto;
 }
 
+/* Sets all the different images to have different image sizes. */
 img.size1 {
     width: 5in;
 }

@@ -22,6 +22,7 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+/* Sets the body to be displayed as a flexbox orientaded with rows and wrapping. */
 body {
     display: flex;
     display: -webkit-flex;
@@ -29,10 +30,12 @@ body {
     -webkit-flex-flow: row wrap;
 }
 
+/* Sets the growth and shrink rate of the sheet section to 3 and 1 and sets the basis size as 301px. */
 section#sheet {
     flex: 3 1 301px;
 }
 
+/* Sets the flex growth and shrink values to 1 and 3 and the basis to 180px. */
 article {
     flex: 1 3 180px;
 }
@@ -42,10 +45,13 @@ article {
    ============================================
 */
 @media only screen and (max-width: 480px) {
+
+    /* This would set the image panel to full width. */
     img.panel {
         width: 100%;
     }
 
+    /* The nav will become less important than the footer, which will make it show up last on the page. */
     nav.horizontal {
         order: 99;
     }
@@ -60,6 +66,8 @@ article {
    ===================================================
 */
 @media only screen and (min-width: 481px) {
+
+    /* Makes the nav flexible, but doesn't wrap, and sets the overall height to 40px. */
     nav.horizontal ul {
         display: flex;
         flex-wrap: row nowrap;
@@ -70,6 +78,7 @@ article {
         flex: 1 1 auto;
     }
 
+    /* Sets all the different images to have different image sizes. */
     img.size1 {
         width: 100%;
     }
